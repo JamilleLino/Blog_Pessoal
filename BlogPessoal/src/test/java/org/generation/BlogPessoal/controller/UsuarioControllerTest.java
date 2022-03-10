@@ -84,7 +84,7 @@ public class UsuarioControllerTest {
 	@DisplayName("Alterar um Usuário")
 	public void deveAtualizarUmUsuario() {
 
-		Optional<Usuario> usuarioCreate = UsuarioService.CadastroUsuario(new Usuario(0L, 
+		Optional<Usuario> usuarioCreate = usuarioService.CadastrarUsuario(new Usuario(0L, 
 			"Juliana Andrews", "https://i.imgur.com/yDRVeK7.jpg", "juliana_andrews@email.com.br", "juliana123"));
 
 		Usuario usuarioUpdate = new Usuario(usuarioCreate.get().getId(), 
