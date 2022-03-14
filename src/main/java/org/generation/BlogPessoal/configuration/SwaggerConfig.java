@@ -22,16 +22,16 @@ public class SwaggerConfig {
 					.description("Projeto Blog Pessoal - Generation Brasil")
 					.version("v0.0.1")
 				.contact(new Contact()
-					.name("Conteudo Generation")
-					.url("https://github.com/conteudoGeneration")
-					.email("conteudogeneration@gmail.com")))
+					.name("GitHub JamilleLino")
+					.url("https://github.com/JamilleLino")
+					.email("linojamille@gmail.com")))
 				.externalDocs(new ExternalDocumentation()
-					.description("Github")
-					.url("https://github.com/conteudoGeneration/"));
+					.description("GitHub Prpject")
+					.url("https://github.com/JamilleLino/Blog_Pessoal"));
 	}
 
 	@Bean
-	public OpenApiCustomiser customerGlobalHeaderOpenApiCustomiser() {
+	public OpenApiCustomiser customerGlobalResponseStatus() {
 
 		return openApi -> {
 			openApi.getPaths().values().forEach(pathItem -> pathItem.readOperations().forEach(operation -> {
